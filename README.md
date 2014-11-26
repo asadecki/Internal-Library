@@ -1,4 +1,0 @@
-Internal-Library
-================
-
-`grunt serve`
