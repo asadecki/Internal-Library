@@ -13,8 +13,10 @@ Internal-Library
     `mongo`
 3. Install from NPM
     `npm install`
-4. Initial grunt
+4. Bower install
+    `bower install`
+5. Initial grunt
     `grunt`
-5. Run Internal-Library
+6. Run Internal-Library
     `grunt serve`
     
