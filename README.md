@@ -13,6 +13,8 @@ Internal-Library
     `mongo`
 3. Install from NPM
     `npm install`
-4. Run Internal-Library
+4. Initial grunt
+    `grunt`
+5. Run Internal-Library
     `grunt serve`
     
