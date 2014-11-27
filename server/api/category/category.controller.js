@@ -16,7 +16,7 @@ exports.index = function (req, res) {
             return handleError(res, err);
         }
 
-        <!-- TODO refactor it !! -->
+        // TODO refactor it !!
         var categories = [];
         books.forEach(function (book) {
             var singleCategory = book.category;

@@ -30,6 +30,20 @@ Book.find({}).remove(function () {
         category: 'PHP',
         isPdfVersion: true
     });
+
+    Book.create({
+        title: 'How to format computer',
+        author: 'Damian',
+        category: 'Unix',
+        isPdfVersion: true
+    });
+
+    Book.create({
+        title: 'How to group objects in Cassandra',
+        author: 'Tomek',
+        category: 'noSQL',
+        isPdfVersion: true
+    });
 });
 
 Thing.find({}).remove(function () {
