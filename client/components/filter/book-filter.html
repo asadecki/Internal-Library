@@ -1,4 +1,4 @@
-<div ng-controller="ButtonsCtrl" class="books-filter">
+<div ng-controller="ButtonsCtrl" class="container books-filter">
 	<h4 class="books-filter-title">Filter: </h4>
 	<div class="btn-group">
 		<label class="btn btn-primary" ng-repeat="filter in filtersModel" ng-click="doAction(filter.action)" ng-model="filter.value" btn-checkbox>{{filter.title}}</label>
