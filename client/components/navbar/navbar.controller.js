@@ -22,4 +22,9 @@ angular.module('internalLibraryApp')
         $scope.isActive = function (route) {
             return route === $location.path();
         };
+
+        $scope.isInPath = function (route) {
+          return $location.path().startsWith(route);
+        };
+
     });
