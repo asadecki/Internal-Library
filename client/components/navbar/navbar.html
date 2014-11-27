@@ -37,7 +37,7 @@
     </div>
   </header>
 
-  <div ng-include="isLoggedIn() ? 'components/filter/book-filter.html' : null"></div>
+  <div ng-include="!isInPath('/book/single/') ? 'components/filter/book-filter.html' : null"></div>
 </div>
 
 
