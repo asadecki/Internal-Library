@@ -8,60 +8,77 @@
 var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
 var Book = require('../api/book/book.model');
+var Categoryphoto = require('../api/categoryphoto/categoryphoto.model');
 
 
 /*Book.find({}).remove(function () {
-    Book.create({
-        title: 'Java 8',
-        author: 'Wojtek',
-        category: 'JAVA',
-        description: 'Blah blah blah 1',
-        isPdfVersion: true,
-        isPaperVersion: true,
-        whoHasGotItNow: 'Maciek'
-    });
+ Book.create({
+ title: 'Java 8',
+ author: 'Wojtek',
+ category: 'JAVA',
+ description: 'Blah blah blah 1',
+ isPdfVersion: true,
+ isPaperVersion: true,
+ whoHasGotItNow: 'Maciek'
+ });
 
-    Book.create({
-        title: 'Java 7',
-        author: 'Wojtek',
-        category: 'JAVA',
-        description: 'Blah blah blah 2',
-        isPdfVersion: false,
-        isPaperVersion: false,
-        whoHasGotItNow: 'Maciek'
-    });
+ Book.create({
+ title: 'Java 7',
+ author: 'Wojtek',
+ category: 'JAVA',
+ description: 'Blah blah blah 2',
+ isPdfVersion: false,
+ isPaperVersion: false,
+ whoHasGotItNow: 'Maciek'
+ });
 
-    Book.create({
-        title: 'PHP 500',
-        author: 'Adam',
-        category: 'PHP',
-        description: 'Blah blah blah 3',
-        isPdfVersion: false,
-        isPaperVersion: false,
-        whoHasGotItNow: 'Maciek'
-    });
+ Book.create({
+ title: 'PHP 500',
+ author: 'Adam',
+ category: 'PHP',
+ description: 'Blah blah blah 3',
+ isPdfVersion: false,
+ isPaperVersion: false,
+ whoHasGotItNow: 'Maciek'
+ });
 
-    Book.create({
-        title: 'How to format computer',
-        author: 'Damian',
-        category: 'Unix',
-        description: 'Blah blah blah 4',
-        isPdfVersion: true,
-        isPaperVersion: true,
-        whoHasGotItNow: 'Maciek'
-    });
+ Book.create({
+ title: 'How to format computer',
+ author: 'Damian',
+ category: 'Unix',
+ description: 'Blah blah blah 4',
+ isPdfVersion: true,
+ isPaperVersion: true,
+ whoHasGotItNow: 'Maciek'
+ });
 
-    Book.create({
-        title: 'How to group objects in Cassandra',
-        author: 'Tomek',
-        category: 'noSQL',
-        description: 'Blah blah blah 5',
-        isPdfVersion: true,
-        isPaperVersion: false,
-        whoHasGotItNow: 'Maciek'
+ Book.create({
+ title: 'How to group objects in Cassandra',
+ author: 'Tomek',
+ category: 'noSQL',
+ description: 'Blah blah blah 5',
+ isPdfVersion: true,
+ isPaperVersion: false,
+ whoHasGotItNow: 'Maciek'
+ });
+ });
+ */
+
+Categoryphoto.find({}).remove(function () {
+    Categoryphoto.create({
+        name: 'JAVA',
+        url: 'https://pbs.twimg.com/profile_images/1605673210/Java_400x400.jpg'
+    }, {
+        name: 'PHP',
+        url: 'http://www.worldstopbrands.com/_mm/_d/_ext3/73378/big_Elephpant%20Mascot%20Php01.gif'
+    }, {
+        name: 'Unix',
+        url: 'https://moonlite.s3.amazonaws.com/objs/302/original.png?1380654874'
+    }, {
+        name: 'noSQL',
+        url: 'https://pbs.twimg.com/profile_images/731280347/nosql.gif'
     });
 });
-*/
 
 
 Thing.find({}).remove(function () {

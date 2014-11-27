@@ -6,6 +6,16 @@ angular.module('internalLibraryApp')
 
         $http.get('/api/categories').success(function (categories) {
             $scope.categories = categories;
+
+            categories.forEach(function (category) {
+
+                $http.get('/api/categoryphotos/' + category.name).success(function(categoryphoto) {
+                    console.log(categoryphoto);
+                    console.log(categoryphoto[0].url);
+                    category.url = categoryphoto[0].url;
+                });
+
+            });
             //socket.syncUpdates('category', $scope.categories);
         });
 
