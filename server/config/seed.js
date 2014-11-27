@@ -27,7 +27,7 @@ Book.find({}).remove(function () {
     Book.create({
         title: 'PHP 500',
         author: 'Adam',
-        category: 'JAVA',
+        category: 'PHP',
         isPdfVersion: true
     });
 });
