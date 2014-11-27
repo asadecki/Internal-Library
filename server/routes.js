@@ -14,6 +14,7 @@ module.exports = function(app) {
   app.use('/api/books', require('./api/book'));
   app.use('/api/categories', require('./api/category'));
   app.use('/api/categoryphotos', require('./api/categoryphoto'));
+  app.use('/api/bookphotos', require('./api/bookphoto'));
 
   app.use('/auth', require('./auth'));
   
