@@ -4,7 +4,7 @@ angular.module('internalLibraryApp')
     .controller('CategoryCtrl', function ($scope, $http, socket) {
         $scope.books = [];
 
-        $http.get('/api/categories/books/PHP').success(function (books) {
+        $http.get('/api/categories/books/JAVA').success(function (books) {
             $scope.books = books;
         });
 
