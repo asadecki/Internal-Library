@@ -37,7 +37,7 @@
     </div>
   </header>
 
-  <div ng-include="'components/filter/book-filter.html'"></div>
+  <div ng-include="isLoggedIn() ? 'components/filter/book-filter.html' : null"></div>
 </div>
 
 
