@@ -1,9 +1,25 @@
 <p>REMOVE FILTER FROM THIS PAGE!!!!!</p>
 
-<p> Single book {{bookListName}}</p>
+<p>{{bookTitle}}</p>
 
 <div class="row">
-    <div class="col-md-2 about">ABOUT:</div>
-    <div class="col-md-4 picture">.col-md-6</div>
-    <div class="col-md-2 formats">FORMATS</div>
+    <div class="col-md-2 about">ABOUT
+        <p>Author: {{author}}</p>
+
+        <p>Category: {{category}}</p>
+
+        <p>Description: {{description}}</p>
+    </div>
+    <div class="col-md-4 picture">PHOTO WILL BE HERE</div>
+    <div class="col-md-2 formats">FORMATS
+        <p>PDF: {{isPdfVersion}}</p>
+
+        <p>PAPER: {{isPaperVersion}}</p>
+
+        <div ng-show="isPaperVersion">{{whoHasGotItNow}} reads it
+        </div>
+
+    </div>
+
+    <button type="button" class="btn btn-success">I got this!</button>
 </div>

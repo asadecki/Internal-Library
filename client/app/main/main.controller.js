@@ -6,7 +6,7 @@ angular.module('internalLibraryApp')
 
         $http.get('/api/categories').success(function (categories) {
             $scope.categories = categories;
-            socket.syncUpdates('thing', $scope.categories);
+            //socket.syncUpdates('category', $scope.categories);
         });
 
         //$scope.addThing = function () {

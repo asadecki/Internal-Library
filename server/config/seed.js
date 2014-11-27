@@ -9,42 +9,60 @@ var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
 var Book = require('../api/book/book.model');
 
-Book.find({}).remove(function () {
+
+/*Book.find({}).remove(function () {
     Book.create({
         title: 'Java 8',
         author: 'Wojtek',
         category: 'JAVA',
-        isPdfVersion: true
+        description: 'Blah blah blah 1',
+        isPdfVersion: true,
+        isPaperVersion: true,
+        whoHasGotItNow: 'Maciek'
     });
 
     Book.create({
         title: 'Java 7',
         author: 'Wojtek',
         category: 'JAVA',
-        isPdfVersion: false
+        description: 'Blah blah blah 2',
+        isPdfVersion: false,
+        isPaperVersion: false,
+        whoHasGotItNow: 'Maciek'
     });
 
     Book.create({
         title: 'PHP 500',
         author: 'Adam',
         category: 'PHP',
-        isPdfVersion: true
+        description: 'Blah blah blah 3',
+        isPdfVersion: false,
+        isPaperVersion: false,
+        whoHasGotItNow: 'Maciek'
     });
 
     Book.create({
         title: 'How to format computer',
         author: 'Damian',
         category: 'Unix',
-        isPdfVersion: true
+        description: 'Blah blah blah 4',
+        isPdfVersion: true,
+        isPaperVersion: true,
+        whoHasGotItNow: 'Maciek'
     });
 
     Book.create({
         title: 'How to group objects in Cassandra',
         author: 'Tomek',
         category: 'noSQL',
-        isPdfVersion: true
+        description: 'Blah blah blah 5',
+        isPdfVersion: true,
+        isPaperVersion: false,
+        whoHasGotItNow: 'Maciek'
     });
 });
+*/
+
 
 Thing.find({}).remove(function () {
     Thing.create({

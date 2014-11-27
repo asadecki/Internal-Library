@@ -7,7 +7,10 @@ var BookSchema = new Schema({
     title: String,
     author: String,
     category: String,
-    isPdfVersion: Boolean
+    description: String,
+    isPdfVersion: Boolean,
+    isPaperVersion: Boolean,
+    whoHasGotItNow: String
 });
 
 module.exports = mongoose.model('Book', BookSchema);
