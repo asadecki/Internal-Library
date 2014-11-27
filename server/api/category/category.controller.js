@@ -40,6 +40,15 @@ exports.index = function (req, res) {
     });
 };
 
+exports.booksInCategory = function (req, res) {
+    Book.find({category: req.params.name}, function (err, books) {
+        if (err) {
+            return handleError(res, err);
+        }
+        return res.json(200, books);
+    });
+};
+
 function handleError(res, err) {
     return res.send(500, err);
 }
