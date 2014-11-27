@@ -19,6 +19,7 @@ Book.find({}).remove(function () {
         category: 'JAVA',
         description: 'Blah blah blah 1',
         isPdfVersion: true,
+        pdfUrl: 'https://drive.google.com/open?id=0B9Rf19sSPeC1SXpER0Q2SnY5YzQ&authuser=0',
         isPaperVersion: true,
         whoHasGotItNow: 'Maciek'
     });

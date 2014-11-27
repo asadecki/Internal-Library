@@ -9,6 +9,7 @@ var BookSchema = new Schema({
     category: String,
     description: String,
     isPdfVersion: Boolean,
+    pdfUrl: String,
     isEbookVersion: Boolean,
     isPaperVersion: Boolean,
     whoHasGotItNow: String

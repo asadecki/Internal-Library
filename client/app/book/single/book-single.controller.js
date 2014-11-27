@@ -10,6 +10,7 @@ angular.module('internalLibraryApp')
         $scope.category = book.category;
         $scope.description = book.description;
         $scope.isPdfVersion = book.isPdfVersion;
+        $scope.pdfUrl = book.pdfUrl;
         $scope.isEbookVersion = book.isEbookVersion;
         $scope.isPaperVersion = book.isPaperVersion;
         $scope.whoHasGotItNow = book.whoHasGotItNow;

@@ -30,7 +30,7 @@
             <p>PDF:</p>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8">
-            <button ng-show="isPdfVersion" type="button" class="btn btn-success picture-button">Get PDF</button>
+            <a href="{{pdfUrl}}" ng-show="isPdfVersion" type="button" class="btn btn-success picture-button">Get PDF</a>
             <p ng-show="!isPdfVersion">Not avail</p>
           </div>
         </div>
