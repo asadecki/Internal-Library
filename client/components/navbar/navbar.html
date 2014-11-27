@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">internal-library</a>
+      <a href="/" class="navbar-brand">Internal Library</a>
     </div>
     <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
@@ -26,6 +26,19 @@
       </ul>
     </div>
   </div>
+
+
+  <header ng-show="isActive('/')" class="hero-unit" id="banner">
+    <div class="container">
+      <h1>Internal Library</h1>
+
+      <p class="lead">Schibsted Tech Polska</p>
+      <img src="assets/images/library-icon.png" alt="Library">
+    </div>
+  </header>
+
+  <div ng-include="'components/filter/book-filter.html'"></div>
 </div>
 
-<div ng-include="'components/filter/book-filter.html'"></div>
+
+

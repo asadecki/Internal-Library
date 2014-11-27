@@ -6,10 +6,6 @@ angular.module('internalLibraryApp')
             {
                 'title': 'Home',
                 'link': '/'
-            },
-            {
-                'title': 'Books',
-                'link': '/book/list/'
             }
         ];
 

@@ -1,37 +1,20 @@
-<header class="hero-unit" id="banner">
-    <div class="container">
-        <h1>Internal Library</h1>
-
-        <p class="lead">Schibsted Tech Polska</p>
-        <img src="assets/images/library-icon.png" alt="Library">
-    </div>
-</header>
-
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">Categories:</h1>
-            <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="category in categories">
+            <ul class="nav nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="category in categories">
                 <li class="category">
-                    <a href="#" tooltip="xxx">In category {{category.name}} we have got {{category.quantity}}
-                        books</a>
+                  <button type="button" class="btn btn-default btn-lg btn-block">
+
+                    <h1>{{category.name}}</h1>
+
+                    <small>{{category.quantity}} books</small>
+
+                  </button>
                 </li>
             </ul>
         </div>
     </div>
-
-    <!--
-    <form class="thing-form">
-        <label>Syncs in realtime across clients</label>
-
-        <p class="input-group">
-            <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="newThing">
-      <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
-      </span>
-        </p>
-    </form>
-    -->
 </div>
 
 <footer class="footer">
