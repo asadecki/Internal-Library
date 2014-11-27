@@ -3,7 +3,7 @@
 angular.module('internalLibraryApp')
     .config(function ($routeProvider) {
         $routeProvider
-            .when('/category/books', {
+            .when('/categories/books/:name', {
                 templateUrl: 'app/category/category.html',
                 controller: 'CategoryCtrl'
             });

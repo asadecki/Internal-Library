@@ -41,6 +41,7 @@ exports.index = function (req, res) {
 };
 
 exports.booksInCategory = function (req, res) {
+    console.log(req.params.name);
     Book.find({category: req.params.name}, function (err, books) {
         if (err) {
             return handleError(res, err);

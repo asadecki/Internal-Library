@@ -1,14 +1,11 @@
 'use strict';
 
 angular.module('internalLibraryApp')
-    .controller('CategoryCtrl', function ($scope, $http, socket) {
+    .controller('CategoryCtrl', function ($scope, $http, $routeParams) {
         $scope.books = [];
 
-        $http.get('/api/categories/books/JAVA').success(function (books) {
+        $http.get('/api/categories/books/' + $routeParams.name).success(function (books) {
+            console.log("xxxxx");
             $scope.books = books;
-        });
-
-        $scope.$on('$destroy', function () {
-            socket.unsyncUpdates('book');
         });
     });
