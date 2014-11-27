@@ -1,0 +1,6 @@
+<div ng-controller="ButtonsCtrl">
+	<h4 style="float:left">Filter: </h4>
+	<div class="btn-group">
+		<label class="btn btn-primary" ng-repeat="(key, filter) in filtersModel" ng-click="doAction(key)" ng-model="filter.value" btn-checkbox>{{filter.title}}</label>
+	</div>
+</div>
