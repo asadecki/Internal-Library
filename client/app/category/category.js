@@ -5,6 +5,7 @@ angular.module('internalLibraryApp')
         $routeProvider
             .when('/categories/books/:name', {
                 templateUrl: 'app/category/category.html',
-                controller: 'CategoryCtrl'
+                controller: 'CategoryCtrl',
+              authenticate: true
             });
     });

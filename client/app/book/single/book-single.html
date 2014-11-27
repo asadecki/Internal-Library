@@ -7,36 +7,57 @@
   <div class="row">
     <div class="col-md-3 col-lg-3">
       <div class="about">
-        ABOUT
+
         <p>Author: {{author}}</p>
+
         <p>Category: {{category}}</p>
+
         <p>Description: {{description}}</p>
 
       </div>
     </div>
     <div class="col-md-6 col-lg-6">
       <div class="picture">
-        <img class="picture-img" src="https://netbeans.org/images_www/articles/book-liang-edition-6.jpg"/>
-
-        <button type="button" class="btn btn-success picture-button">I got this!</button>
-
+        <img class="picture-img" src="{{url}}"/>
       </div>
 
     </div>
     <div class="col-md-3 col-lg-3">
       <div class="formats">
-        FORMATS
-        <p>PDF: {{isPdfVersion}}</p>
 
-        <p>PAPER: {{isPaperVersion}}</p>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <p>PDF:</p>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <button ng-show="isPdfVersion" type="button" class="btn btn-success picture-button">Get PDF</button>
+            <p ng-show="!isPdfVersion">Not avail</p>
+          </div>
+        </div>
 
-        <div ng-show="isPaperVersion">{{whoHasGotItNow}} reads it
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <p>E-book:</p>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <button ng-show="isEbookVersion" type="button" class="btn btn-success picture-button">Get E-book</button>
+            <p ng-show="!isEbookVersion">Not avail</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <p>Paper:</p>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <button ng-show="isPaperVersion" type="button" class="btn btn-success picture-button">Get paper version</button>
+            <p ng-show="!isPaperVersion">Not avail</p>
+            <div ng-show="isPaperVersion">{{whoHasGotItNow}} is reading it</div>
+          </div>
         </div>
 
       </div>
-
     </div>
-
   </div>
 </div>
 
