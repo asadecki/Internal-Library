@@ -15,4 +15,8 @@ angular.module('internalLibraryApp')
                 });
             });
         });
+
+        $scope.submit = function () {
+            $http.post('/api/books', {title: $scope.title, author: $scope.author});
+        };
     });

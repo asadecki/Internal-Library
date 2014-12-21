@@ -5,6 +5,6 @@ angular.module('internalLibraryApp')
         $routeProvider.when('/book/single/:id', {
             templateUrl: 'app/book/single/book-single.html',
             controller: 'SingleBookCtrl',
-          authenticate: true
+          authenticate: false
         });
     });

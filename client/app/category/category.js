@@ -6,6 +6,11 @@ angular.module('internalLibraryApp')
             .when('/categories/books/:name', {
                 templateUrl: 'app/category/category.html',
                 controller: 'CategoryCtrl',
-              authenticate: true
+              authenticate: false
             });
     });
+
+function showAddBookForm() {
+    document.getElementById("addBookForm").classList.remove('hidden');
+    document.getElementById("addBookButton").classList.add('hidden');
+}

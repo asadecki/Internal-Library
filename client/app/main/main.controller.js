@@ -10,8 +10,6 @@ angular.module('internalLibraryApp')
             categories.forEach(function (category) {
 
                 $http.get('/api/categoryphotos/' + category.name).success(function(categoryphoto) {
-                    console.log(categoryphoto);
-                    console.log(categoryphoto[0].url);
                     category.url = categoryphoto[0].url;
                 });
 

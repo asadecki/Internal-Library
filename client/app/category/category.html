@@ -14,4 +14,17 @@
         </div>
     </div>
 
+    <button id="addBookButton" onclick="showAddBookForm()" type="button" class="btn btn-success picture-button">
+        Add new book
+    </button>
+
+    <div id="addBookForm" class="hidden">
+
+        <form ng-submit="submit()" ng-controller="CategoryCtrl">
+            Title <input type="text" ng-model="title" name="title"/> </br>
+            Author <input type="text" ng-model="author" name="author"/> </br>
+            <input type="submit" id="submit" value="Submit" class="btn btn-success picture-button"/>
+        </form>
+    </div>
 </div>
+
